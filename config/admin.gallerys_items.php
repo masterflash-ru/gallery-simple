@@ -5,7 +5,9 @@ use Admin\Service\JqGrid\ColModelHelper;
 use Admin\Service\JqGrid\NavGridHelper;
 use Zend\Json\Expr;
 
-
+if (empty($_GET["storage"])){
+    $_GET["storage"]=0;
+}
 
 return [
         /*jqgrid - сетка*/
